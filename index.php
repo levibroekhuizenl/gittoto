@@ -1,28 +1,28 @@
 <?php
 
-$home1 = "iets";
-$home2 = "Eintracht Frankfurt";
-$home3 = "Olimpiakos";
+$home1 = "Rostov";
+$home2 = "Galatasaray";
+$home3 = "Olimpik Donetsk";
 $home4 = "Glasgow Rangers";
 
-$quoteHome1 = 4.35;
-$quoteHome2 = 1.62;
-$quoteHome3 = 2.95;
+$quoteHome1 = 2.26;
+$quoteHome2 = 2.04;
+$quoteHome3 = 1.80;
 $quoteHome4 = 3.40;
 
-$quoteDraw1 = 3.40;
-$quoteDraw2 = 4.00;
-$quoteDraw3 = 3.10;
+$quoteDraw1 = 3.15;
+$quoteDraw2 = 3.55;
+$quoteDraw3 = 2.20;
 $quoteDraw4 = 3.60;
 
-$quoteAway1 = 1.91;
-$quoteAway2 = 5.50;
+$quoteAway1 = 2.85;
+$quoteAway2 = 3.35;
 $quoteAway3 = 2.56;
 $quoteAway4 = 2.10;
 
-$away1 = "Manchtester United";
-$away2 = "FC Basel";
-$away3 = "Wolverhampton Wanderers";
+$away1 = "Lokomotiv Moskou";
+$away2 = "Besiktas";
+$away3 = "Vorskla Poltava";
 $away4 = "Bayer Leverkussen";
 
 
@@ -611,7 +611,7 @@ $conn->close();
     var time = new Date();
     var hours = time.getHours();
     var minutes = time.getMinutes();
-        if( (hours>=21) || (hours<8) ){
+        if( (hours>=17) || (hours<10) ){
 
             document.getElementById("input2").style.visibility = "hidden";
             document.getElementById("submit2").style.visibility = "hidden";
@@ -619,11 +619,20 @@ $conn->close();
             document.getElementById("input1").style.visibility = "hidden";
             document.getElementById("submit1").style.visibility = "hidden";
 
-            document.getElementById("input4").style.visibility = "hidden";
-            document.getElementById("submit4").style.visibility = "hidden";
+        }
+		
+        if( (hours>=17) || (hours<10) ){
 
             document.getElementById("input3").style.visibility = "hidden";
-            document.getElementById("submit3").style.visibility = "hidden"
+            document.getElementById("submit3").style.visibility = "hidden";
+
+
+        }
+		
+        if( (hours>=0) || (hours<21) ){
+
+            document.getElementById("input4").style.visibility = "hidden";
+            document.getElementById("submit4").style.visibility = "hidden";
 
 
         }
