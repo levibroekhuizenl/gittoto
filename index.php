@@ -1,6 +1,6 @@
 <?php
 
-$home1 = "LASK Linz";
+$home1 = "iets";
 $home2 = "Eintracht Frankfurt";
 $home3 = "Olimpiakos";
 $home4 = "Glasgow Rangers";
